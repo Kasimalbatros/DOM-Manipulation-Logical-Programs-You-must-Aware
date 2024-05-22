@@ -1,0 +1,25 @@
+The getAttribute method is an essential tool in JavaScript for 
+accessing and retrieving the values of attributes on DOM elements. 
+
+Example Comparison
+javascript
+Copy code
+const input = document.querySelector("input");
+
+// Using getAttribute
+const inputValue = input.getAttribute("value");  // Gets the HTML attribute value
+
+// Using property
+const inputCurrentValue = input.value;  // Gets the current value in the DOM
+
+
+
+
+Reading Initial Attribute Values
+
+Useful for retrieving the initial values of attributes as they were defined in the HTML document.
+javascript
+Copy code
+const script = document.querySelector("script");
+const src = script.getAttribute("src");
+console.log(src); // Output: script source URL

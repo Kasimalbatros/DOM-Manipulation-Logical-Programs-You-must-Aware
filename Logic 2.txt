@@ -1,0 +1,14 @@
+Logic 2     (DONE---> EASY)
+
+
+Dynamic Content Generation
+
+When creating elements dynamically with JavaScript and needing to set various 
+attributes.
+javascript
+
+const newButton = document.createElement("button");
+newButton.setAttribute("type", "button");
+newButton.setAttribute("class", "btn btn-primary");
+newButton.textContent = "Click Me";
+document.body.appendChild(newButton);

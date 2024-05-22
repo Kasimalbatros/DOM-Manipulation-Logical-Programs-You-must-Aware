@@ -1,0 +1,14 @@
+Logic 3       (DONE ---> Easy Concept)
+
+
+Modifying Elements Based on User Interaction
+
+Adjusting attributes in response to user actions (e.g., changing an image when a 
+button is clicked).
+javascript
+
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+    const img = document.querySelector("img");
+    img.setAttribute("src", "new-image.jpg");
+});

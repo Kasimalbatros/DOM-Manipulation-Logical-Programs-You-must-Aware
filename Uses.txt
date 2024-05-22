@@ -1,0 +1,19 @@
+
+
+Getting an Image Source
+1.javascript
+Copy code
+
+const img = document.querySelector("img");
+const src = img.getAttribute("src");
+console.log(src); // Output: path/to/image.jpg (if set)
+
+----------------------------------------------------------------------
+Getting a Hyperlink Href
+
+2.javascript
+Copy code
+
+const link = document.querySelector("a");
+const href = link.getAttribute("href");
+console.log(href); // Output: https://www.example.com (if set)

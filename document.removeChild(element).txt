@@ -1,0 +1,70 @@
+document.removeChild(element)   ?
+
+The document.removeChild(element) method is used to remove a child element from the
+DOM. This method is called on the parent element and requires a reference to the 
+child element you want to remove.
+
+This example demonstrates how to dynamically remove a child element from the DOM using JavaScript.
+
+-----------------------------------------------------------------------------------
+Here's a step-by-step explanation with an example:
+
+Step-by-Step Example
+1. Identifying the Parent and Child Elements
+First, you need to identify the parent element and the child element you want to remove. You can use various DOM methods like getElementById, querySelector, or querySelectorAll to get references to these elements.
+
+2. Removing the Child Element
+Use the removeChild method on the parent element, passing the reference to the child element as an argument.
+-----------------------------------------------------------------------------------------
+Complete Example
+Here’s a complete example that demonstrates how to remove a child element from the DOM:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document.removeChild Example</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">This is the child element</div>
+    </div>
+
+    <script>
+        // Step 1: Get references to the parent and child elements
+        let parentElement = document.getElementById('parent');
+        let childElement = document.getElementById('child');
+
+        // Step 2: Remove the child element from the parent
+        parentElement.removeChild(childElement);
+
+        // Optional: Log the parent element to the console to verify removal
+        console.log(parentElement);
+    </script>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------
+Explanation
+
+Identifying the Parent and Child Elements:
+
+document.getElementById('parent') retrieves the parent <div> with the ID of parent.
+document.getElementById('child') retrieves the child <div> with the ID of child.
+Removing the Child Element:
+
+parentElement.removeChild(childElement) removes the child element from the parent 
+element. This method removes the specified child node from the DOM and returns the 
+removed node.
+Verification:
+
+console.log(parentElement) logs the parent element to the console to verify that the 
+child has been removed.
+Notes
+If the specified child element does not exist as a child of the parent element, the
+removeChild method will throw a NotFoundError exception.
+Ensure that you have a valid reference to both the parent and child elements before 
+attempting to remove the child element to avoid errors.

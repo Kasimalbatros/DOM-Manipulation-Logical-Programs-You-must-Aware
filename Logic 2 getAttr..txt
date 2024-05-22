@@ -1,0 +1,11 @@
+Logic 2
+
+
+Working with Custom Attributes
+
+Essential for accessing custom data attributes.
+javascript
+Copy code
+const element = document.querySelector("[data-info]");
+const info = element.getAttribute("data-info");
+console.log(info); // Output: value of data-info attribute

@@ -1,0 +1,5 @@
+document.appendChild(element)    ?
+
+We generally use document.appendChild(element) with document.createElement(element) to add an HTML to our DOM
+
+

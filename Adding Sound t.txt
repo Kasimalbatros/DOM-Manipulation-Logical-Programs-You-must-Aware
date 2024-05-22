@@ -1,0 +1,26 @@
+Adding Sound to our Buttons
+
+var audio=new Audio("music relative address");
+audio.play();
+
+Ex:-
+var audio=new Audio("sounds/tom-1.mp3");
+audio.play();  // play() is method which plays the sound
+
+----------------------------------------------------------------------------------------
+Q1.If we click on any button then sound or music get started  ?
+
+code:-
+var a=document.querySelectorAll(".drum").length;  // drum is a class present in every button element
+for(var i=0;i<a;i++){
+
+document.querySelectorAll(".drum")[i].addEventlisteners("click",funtion(){
+
+var audio=new Audio("sounds/tom-1.mp3");
+audio.play();  // play() is method which plays the sound
+
+});
+}
+
+output:-
+when you click on any button sound or music is started

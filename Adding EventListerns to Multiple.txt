@@ -1,0 +1,13 @@
+Adding EventListeners to Multiple buttons at same time.
+
+var a=document.querySelectorAll(".drum").length;  // drum is a class present in every button element
+for(var i=0;i<a;i++){
+
+document.querySelectorAll(".drum")[i].addEventlisteners("click",funtion(){
+alert("Button is Clicked")
+});
+}
+
+
+output:-
+click on any button you get an alert "Button is Clicked"

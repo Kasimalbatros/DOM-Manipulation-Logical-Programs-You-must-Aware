@@ -1,0 +1,41 @@
+Difference between console.log() and document.write ()
+
+Detailed Comparison
+--------------------------
+console.log():
+
+Used within the browser's developer tools.
+Does not affect the user interface or the HTML content.
+Helpful in logging messages, variable values, and errors.
+
+
+----------------------------------------------------------------------------
+document.write():
+
+Directly affects the HTML document.
+Used to insert text or HTML into the document stream.
+Can replace the entire document if used after the page load, which can disrupt the user experience.
+
+
+
+-----------------------------------------------------------------------
+
+
+Syntax and Examples
+console.log():
+
+javascript
+Copy code
+console.log('Hello, World!');
+let obj = { name: 'John', age: 30 };
+console.log(obj);
+Output: This will display "Hello, World!" and the object {name: 'John', age: 30} in the browser's console.
+
+---------------------------------------------------------------------------------------
+document.write():
+
+javascript
+Copy code
+document.write('Hello, World!');
+document.write('<h1>Welcome to my website</h1>');
+Output: This will insert "Hello, World!" and a heading "Welcome to my website" into the HTML document.

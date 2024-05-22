@@ -1,0 +1,36 @@
+DOM Manipulation Logical Programs You must Aware   ?  (DONE --> EASY)
+
+Example Comparison
+javascript
+
+const element = document.querySelector("input");
+
+// Using setAttribute
+element.setAttribute("value", "newValue");  // Sets the HTML attribute
+
+// Using property
+element.value = "newValue";  // Sets the DOM property
+
+---------------------------------------------------------------------------------------------
+Detailed Explanation
+
+Example Scenario
+Consider an input element like this:
+
+html
+Copy code
+<input type="text" value="initialValue">
+If you use setAttribute("value", "newValue"), the HTML would now be:
+
+html
+Copy code
+<input type="text" value="newValue">
+But the displayed value in the input field remains "initialValue" until the page
+ is reloaded or the input is reset.
+
+If you use element.value = "newValue", the displayed value in the input field changes 
+immediately to "newValue".(write a.value="end" inside console then you see live changes)
+
+In summary, setAttribute changes the attribute in the HTML markup, 
+while element.value changes the live value in the DOM that users interact with
+directly.
